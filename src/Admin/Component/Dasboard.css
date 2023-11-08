@@ -1,0 +1,245 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.side-main{
+  display: flex;
+  height: 100vh;
+  /* color: white; */
+}
+
+.sidebar{
+  width: 260px;
+  flex-shrink: 0;
+  background-color:#0C54A6;
+  height: 100%;
+  overflow: auto;
+  color: white;
+}
+
+.sidebar-item{
+   padding: .75em 1em;
+   text-align: none;
+   display: block;
+   transition: background-color .3s;
+  background-color:#0C54A6;
+  color: white;
+  
+   
+}
+.sidebar-item:hover{
+ background-color: white
+}
+.sidebar-title{
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+}
+
+.sidebar-title span i{
+  display: inline-block;
+  width:1.5em ;
+}
+
+.sidebar-title .toggle-btn{
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.sidebar.open .sidebar-title .toggle-btn{
+ transform: rotate(180deg);
+}
+.sidebar-content{
+  padding-top: .25em;
+  height: 0;
+  overflow: hidden;
+  /* display: block; */
+
+}
+.properties{
+  height: 50px;
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid; */
+  display: block;
+  border-bottom: 1px solid;
+  /* font-size: 15px; */
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  color: white;
+}
+
+
+
+.sidebar-item.open .sidebar-content{
+  height: auto;
+}
+
+.side-container{
+  width: 100%;
+  /* background-color:#0C54A6; */
+  
+}
+
+.Dashboard{
+  height: 100px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.Dashboard h1{
+  font-size: 30px;
+}
+
+.totals{
+ /* width: 109%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.totalItems{
+  /* padding: 40px 60px; */
+  /* background-color: rgb(193, 193, 249); */
+}
+
+.side-container table{
+  margin-top: 50px;
+  width: 100%;
+  background-color: white;
+}
+
+.side-container td, th{
+  padding: 8px;
+  border: .2px solid whitesmoke;
+  text-align: left;
+  width: 1%;
+}
+.Detailsbtn{
+  padding: 10px 10px;
+  background-color: #0C54A6;
+  color:white ;
+  border: none;
+  border-radius: 5px;
+}
+
+.editbtn{
+  padding: 10px 17px;
+  background-color: #219CDE;
+  color:white ;
+  border: none;
+  border-radius: 5px;
+}
+
+.deletebtn{
+  padding: 10px 10px;
+  background-color: red;
+  color:white ;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.user-form{
+  height: 600px;
+  width: 30%;
+  margin: auto;
+  border:1px solid #0C54A6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.prop-form{
+  height: 700px;
+  width: 90%;
+  margin: auto;
+  border:1px solid #0C54A6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.user-form form{
+  height: 550px;
+  width: 90%;
+  margin: auto;
+  background-color: white;
+}
+
+.prop-form form{
+  height: 500px;
+  width: 90%;
+  margin: auto;
+  background-color: white;
+}
+
+.row-one{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  
+}
+.row-one select{
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.user-form div{
+  margin-bottom: 50px;
+}
+
+.prop-form div{
+  margin-bottom: 20px;
+}
+
+.user-form form input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.prop-form form input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.user-form form button{
+  padding: 10px 20px;
+  background-color:#0C54A6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+
+.prop-form form button{
+  padding: 10px 20px;
+  background-color:#0C54A6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.user-form form button:hover{
+  background-color: #219CDE
+}
+
+.prop-form form button:hover{
+  background-color: #219CDE
+}
+
+
+.side-main span{
+  color: red;
+}
