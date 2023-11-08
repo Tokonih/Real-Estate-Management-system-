@@ -167,7 +167,7 @@ function HomeHeader() {
             <div className="header-banner" style={{ backgroundImage: `url(${images[currentImageIndex]})`, transition: "background-image 0.5s ease" }}>
                 <nav className="transparent-navigation-bar">
                     <div className="navbar"  to="/">
-                        <Link className="logo" >
+                        <Link to="/" className="logo" style={{color: "white", textDecoration: "none"}}>
                             <img src={logo} alt="" />
                             <h1>TAGS <br /> HOMES</h1>
                         </Link>
