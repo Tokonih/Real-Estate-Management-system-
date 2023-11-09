@@ -50,7 +50,7 @@ function Property() {
                        
                             <div className="property-dsc">
                                 {/* <div> */}
-                                <div className="property_img"> <img src={item.image} alt="" /></div>
+                                <div className="property_img"> <img src={item.image? item.image : prop1 } alt="" /></div>
                                 <div className="price-details">
                                     <button className="prop-price">${item.price}</button>
                                     <h6>{item.address}</h6>
