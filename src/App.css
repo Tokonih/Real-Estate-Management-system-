@@ -746,8 +746,11 @@
 }
 
 .coverage-image-05 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 
   margin-top: 50px;
 }

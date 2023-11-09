@@ -34,8 +34,8 @@ const Navigate = useNavigate()
       const getToken = data.data.token
       const merchantData = data.data.id
       console.log(merchantData)
-      localStorage.setItem("Merchant_Token", getToken)
-      localStorage.setItem("merchant_Data_id", merchantData)
+      // localStorage.setItem("Merchant_Token", getToken)
+      // localStorage.setItem("merchant_Data_id", merchantData)
       alert("login succesful")
       Navigate("/")
 

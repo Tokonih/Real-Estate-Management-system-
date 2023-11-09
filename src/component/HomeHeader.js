@@ -164,7 +164,7 @@ function HomeHeader() {
  
     return (
         <div>
-            <div className="header-banner" style={{ backgroundImage: `url(${images[currentImageIndex]})`, transition: "background-image 0.5s ease" }}>
+            <div className="header-banner" style={{ backgroundImage: `url(${images[currentImageIndex]?images[currentImageIndex] :  HomeBannerImg1 })`, transition: "background-image 0.5s ease" }}>
                 <nav className="transparent-navigation-bar">
                     <div className="navbar"  to="/">
                         <Link to="/" className="logo" style={{color: "white", textDecoration: "none"}}>
